@@ -1,0 +1,33 @@
+.container {
+  margin: 30px auto auto auto;
+  padding: 15px;
+  border-radius: 27px;
+  box-shadow: 5px 5px 5px 0px #ccc;
+  background-image: linear-gradient(45deg, #007bff, #141414ab), url(../img/binary.jpg);
+  /*background:url(../img/binary.jpg) , linear-gradient(#eb01a5, #d13531);
+  background: #0000004d;*/
+}
+#input {
+  border-radius:3px;
+  color: gray;
+  position: relative;
+}
+
+#inputBi {
+  border-radius:3px;
+  color: gray;
+  position: relative;
+}
+
+
+#input:focus {
+  
+}
+
+.binary-output{
+  margin: 20px 200px 20px 200px;
+  border: 2px solid gray;
+  border-radius: 3px;
+  background: #fff;
+  height: 40px;
+}
