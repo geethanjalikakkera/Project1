@@ -24,10 +24,11 @@
   
 }
 
-.binary-output{
-  margin: 20px 200px 20px 200px;
-  border: 2px solid gray;
-  border-radius: 3px;
-  background: #fff;
-  height: 40px;
+.binary-output {
+    margin: 20px 200px 20px 200px;
+    border: 2px solid gray;
+    border-radius: 3px;
+    background: #fff;
+    height: auto;
+    overflow: hidden;
 }
