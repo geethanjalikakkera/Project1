@@ -46,9 +46,9 @@
   <br />
   <h2 class="text-white">Binary to Letters </h2>
   <div>
-    <input type="number"  id="inputBi" class="form-controll"  />
+    <input type="text"  id="inputBi" onkeypress="return isNumberKey(event)" class="form-controll"  />
   </div>
-  <div class="binary-output">
+  <div class="string-output">
     <p id="answerBi"></p>
   </div>
   <button id="binaryToString" class="btn btn-primary" align="center">Result</button>
@@ -60,10 +60,6 @@
 </div>
 </div>
  
-<!--<div id = "adsdiv">This ad will close in 
-<span id = "closingtimer">31</span>
-seconds
-</div>-->
  
 <!-- Modal HTML -->
 <div id="myModal" class="modal fade">
@@ -187,7 +183,14 @@ function doSomething() {
  });
 
 
+function isNumberKey(evt)
+{
+	var charCode = (evt.which) ? evt.which : event.keyCode
+	if (charCode > 31 && (charCode < 48 || charCode > 57))
+	return false;
 
+	return true;
+}
 
 /*function closeMyAd() {
 document.getElementById("adsdiv").style.display = "none" ;
