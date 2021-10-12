@@ -39,11 +39,8 @@
  
     <p id="answerBi"></p>
   </div>
-  <button id="binaryToString" class="btn btn-primary" align="center">Click Result</button>
-   <div align="center">
-   <button href="" class="btn btn-primary" id="next2" align="center" onClick="window.location.reload();" style="display:none;">Try Another one</button>
+  <button id="binaryToString" class="btn btn-primary" align="center"> Result</button>
    </div>
-  </div>
 </div>
 </div>
  
@@ -75,10 +72,7 @@
     <script src="js/wow.min.js"></script>
      
 <script>
-  
-	$('#binaryToString').click(function(str) {
-	document.getElementById("binaryToString").style.display = "none"; 
-	document.getElementById("next2").style.display = "block"; 
+  $('#binaryToString').click(function(str) {
   var str = $('#inputBi').val();
   var biString = str.split(" ");
   var uniString = [];
@@ -87,9 +81,6 @@
   }
   $('#answerBi').html(uniString.join(""));
 });
-	
-  
- 
 </script>
 
 </body>
