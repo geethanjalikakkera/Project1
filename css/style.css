@@ -33,6 +33,15 @@
     overflow: hidden;
 }
 
+.string-output {
+    margin: 20px 200px 20px 200px;
+    border: 2px solid gray;
+    border-radius: 3px;
+    background: #fff;
+    height: auto;
+    overflow: hidden;
+}
+
 .modal-header {
     display: -ms-flexbox;
     display: block !important;
